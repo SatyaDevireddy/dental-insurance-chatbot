@@ -55,6 +55,7 @@ gh repo create dental-insurance-chatbot --public --source=. --remote=origin --pu
 ## Step 4: Verify Upload
 
 Visit your GitHub repository URL:
+
 ```
 https://github.com/YOUR_USERNAME/dental-insurance-chatbot
 ```
@@ -62,12 +63,14 @@ https://github.com/YOUR_USERNAME/dental-insurance-chatbot
 ## Important Notes
 
 ### Files Excluded from Git (in .gitignore)
+
 - `.env` - Contains sensitive API keys (not uploaded)
 - `__pycache__/` - Python cache files
 - `data/` - Local data including PDFs and vector database
 - `*.db`, `*.sqlite` - Database files
 
 ### Files Included
+
 - All Python source code
 - `.env.example` - Template for environment variables
 - `requirements.txt` - Python dependencies
@@ -123,6 +126,7 @@ dental-insurance-chatbot/
 ## Recommended Repository Settings
 
 ### Topics/Tags (Add in GitHub Settings)
+
 - `langchain`
 - `rag`
 - `chatbot`
@@ -135,7 +139,9 @@ dental-insurance-chatbot/
 - `chromadb`
 
 ### Branch Protection (Optional)
+
 If working with a team:
+
 1. Go to Settings > Branches
 2. Add rule for `main` branch
 3. Enable "Require pull request reviews before merging"
@@ -143,15 +149,18 @@ If working with a team:
 ## Troubleshooting
 
 ### Authentication Issues
+
 If you get authentication errors:
 
 **Option 1: HTTPS with Personal Access Token**
+
 ```powershell
 # Generate token at: https://github.com/settings/tokens
 # Use token as password when prompted
 ```
 
 **Option 2: SSH**
+
 ```powershell
 # Generate SSH key
 ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -162,7 +171,9 @@ git remote set-url origin git@github.com:YOUR_USERNAME/dental-insurance-chatbot.
 ```
 
 ### Large Files Warning
+
 If you get warnings about large files (PDFs), they're already in .gitignore. To verify:
+
 ```powershell
 git status
 ```
@@ -190,6 +201,7 @@ git push
 ## License Recommendation
 
 Consider adding a LICENSE file. Popular options:
+
 - **MIT License** - Permissive, allows commercial use
 - **Apache 2.0** - Similar to MIT, includes patent grant
 - **GPL-3.0** - Copyleft, requires derivatives to be open source

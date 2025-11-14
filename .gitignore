@@ -31,6 +31,10 @@ data/
 *.db
 *.sqlite
 
+# Flask
+instance/
+.flask_session/
+
 # IDE
 .vscode/
 .idea/

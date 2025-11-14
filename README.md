@@ -2,6 +2,11 @@
 
 A comprehensive dental insurance chatbot built with LangChain that uses **RAG (Retrieval Augmented Generation)** and **MCP (Model Context Protocol)** concepts to help members query their claims, coverages, procedures, ID cards, and other plan information.
 
+## 🌐 Available Interfaces
+
+- **Web Application**: Beautiful UI with modal chat (recommended) - See [WEB_APP.md](WEB_APP.md)
+- **Command Line**: Terminal-based interactive chat - See below
+
 ## 🎯 Features
 
 - **Member Information**: Query personal information and dependents
@@ -120,7 +125,30 @@ CURRENT_MEMBER_ID=MEM001
 
 ## 🎮 Usage
 
-### Running the Chatbot
+### Option 1: Web Application (Recommended)
+
+Start the Flask web server:
+
+```powershell
+python app.py
+```
+
+Then open your browser to: **http://localhost:5000**
+
+Features:
+
+- Beautiful landing page with feature showcase
+- Floating chat icon in bottom-right corner
+- Modal chat window that can be opened/closed
+- Real-time AI responses
+- Responsive design (works on mobile)
+- Session management
+
+See [WEB_APP.md](WEB_APP.md) for detailed web app documentation.
+
+### Option 2: Command Line Interface
+
+For terminal-based chat:
 
 ```powershell
 python main.py

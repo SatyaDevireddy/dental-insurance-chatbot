@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Insurance Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🦷 Dental Insurance Assistant</h1>
+            </div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#plans">Coverage</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Your Intelligent Dental Insurance Assistant</h2>
+                <p class="hero-subtitle">Get instant answers about your coverage, claims, procedures, and benefits</p>
+                <div class="hero-features">
+                    <div class="feature-badge">
+                        <span class="icon">🤖</span>
+                        <span>AI-Powered</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span class="icon">📄</span>
+                        <span>FEDVIP & VADIP 2025</span>
+                    </div>
+                    <div class="feature-badge">
+                        <span class="icon">⚡</span>
+                        <span>Instant Answers</span>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="openChat()">
+                    💬 Start Chatting Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">What Can I Help You With?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>Member Information</h3>
+                    <p>View your profile, contact details, and policy information</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Dependent Coverage</h3>
+                    <p>Check coverage for your family members and dependents</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Claims Status</h3>
+                    <p>Track your claims and view processing status</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Coverage Details</h3>
+                    <p>Understand your preventive, basic, major, and orthodontic coverage</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🦷</div>
+                    <h3>Procedure Costs</h3>
+                    <p>Get cost estimates for dental procedures</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>ID Card Access</h3>
+                    <p>View your digital insurance ID card</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Benefit Usage</h3>
+                    <p>Track your annual benefits and remaining coverage</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Plan Documents</h3>
+                    <p>Search FEDVIP and VADIP 2025 plan summaries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans">
+        <div class="container">
+            <h2 class="section-title">Coverage Information</h2>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Preventive Care</h3>
+                        <span class="plan-badge">100% Coverage</span>
+                    </div>
+                    <div class="plan-body">
+                        <ul class="plan-features">
+                            <li>✅ Routine cleanings (twice per year)</li>
+                            <li>✅ Oral examinations</li>
+                            <li>✅ X-rays and diagnostics</li>
+                            <li>✅ Fluoride treatments</li>
+                            <li>✅ Sealants for children</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Basic & Major Services</h3>
+                        <span class="plan-badge">50-80% Coverage</span>
+                    </div>
+                    <div class="plan-body">
+                        <ul class="plan-features">
+                            <li>✅ Fillings and restorations</li>
+                            <li>✅ Extractions and oral surgery</li>
+                            <li>✅ Crowns and bridges</li>
+                            <li>✅ Root canals</li>
+                            <li>✅ Dentures and partials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About This Assistant</h2>
+            <div class="about-content">
+                <p>This AI-powered chatbot uses advanced technologies to provide accurate, instant answers about your dental insurance:</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">LangChain</span>
+                    <span class="tech-badge">RAG (Retrieval-Augmented Generation)</span>
+                    <span class="tech-badge">MCP (Model Context Protocol)</span>
+                    <span class="tech-badge">ChromaDB</span>
+                    <span class="tech-badge">Local LLM / Azure OpenAI</span>
+                </div>
+                <p class="about-note">Your conversations are private and secure. We use local processing and don't share your data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dental Insurance Chatbot. Powered by AI. Built with ❤️</p>
+            <p class="footer-note">Sample demo application</p>
+        </div>
+    </footer>
+
+    <!-- Chat Icon Button (Floating) -->
+    <button class="chat-icon" onclick="toggleChat()" id="chatIcon" title="Open Chat">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span class="chat-notification" id="chatNotification">New</span>
+    </button>
+
+    <!-- Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="chat-header-content">
+                    <div class="chat-avatar">🦷</div>
+                    <div class="chat-header-text">
+                        <h3>Dental Insurance Assistant</h3>
+                        <span class="chat-status">Online</span>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="icon-button" onclick="resetChat()" title="Reset conversation">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                            <path d="M21 3v5h-5"></path>
+                            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                            <path d="M3 21v-5h5"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-button" onclick="closeChat()" title="Close chat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Member Selection -->
+            <div class="member-selection">
+                <label for="memberSelect" class="member-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Select Member:
+                </label>
+                <select id="memberSelect" class="member-select" onchange="handleMemberChange()">
+                    <option value="">Loading members...</option>
+                </select>
+            </div>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be added dynamically -->
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <textarea 
+                        class="chat-input" 
+                        id="chatInput" 
+                        placeholder="Type your question here..." 
+                        rows="1"
+                        onkeydown="handleKeyDown(event)"
+                    ></textarea>
+                    <button class="send-button" id="sendButton" onclick="sendMessage()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+                <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Claim Detail Modal -->
+    <div class="claim-modal" id="claimModal">
+        <div class="claim-modal-overlay" onclick="closeClaimModal()"></div>
+        <div class="claim-modal-content">
+            <div class="claim-modal-header">
+                <h3>Claim Details</h3>
+                <button class="icon-button" onclick="closeClaimModal()" title="Close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="claim-modal-body" id="claimModalBody">
+                <div class="loading-spinner">Loading claim details...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@ def initialize_sample_data(data_store: InsuranceDataStore):
     Args:
         data_store: InsuranceDataStore instance to populate
     """
-    # Create sample member
+    # Create first sample member - John Smith
     member = Member(
         member_id="MEM001",
         first_name="John",
@@ -31,6 +31,38 @@ def initialize_sample_data(data_store: InsuranceDataStore):
         is_primary=True
     )
     data_store.add_member(member)
+    
+    # Create second sample member - Sarah Johnson
+    member2 = Member(
+        member_id="MEM002",
+        first_name="Sarah",
+        last_name="Johnson",
+        date_of_birth=date(1990, 8, 22),
+        email="sarah.johnson@example.com",
+        phone="555-234-5678",
+        address="456 Oak Ave, Springfield, ST 67890",
+        group_number="GRP12346",
+        plan_id="PLAN001",
+        effective_date=date(2024, 1, 1),
+        is_primary=True
+    )
+    data_store.add_member(member2)
+    
+    # Create third sample member - Robert Davis
+    member3 = Member(
+        member_id="MEM003",
+        first_name="Robert",
+        last_name="Davis",
+        date_of_birth=date(1978, 11, 5),
+        email="robert.davis@example.com",
+        phone="555-345-6789",
+        address="789 Pine Rd, Riverside, ST 11223",
+        group_number="GRP12347",
+        plan_id="PLAN001",
+        effective_date=date(2024, 1, 1),
+        is_primary=True
+    )
+    data_store.add_member(member3)
     
     # Create sample dependents
     spouse = Dependent(
